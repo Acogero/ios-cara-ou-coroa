@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BE1-NM-A9N">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cara ou Coroa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cara_ou_Coroa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FJM-bt-5Sb">
+                                <rect key="frame" x="40" y="125" width="240" height="222"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="G2c-fr-0zD">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="0eP-D2-lPs"/>
+                                            <constraint firstAttribute="width" constant="240" id="AvJ-I8-CG5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4s-rh-JRL">
+                                        <rect key="frame" x="0.0" y="148" width="240" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74" id="5KI-aJ-EL2"/>
+                                        </constraints>
+                                        <state key="normal" image="botao_jogar"/>
+                                        <connections>
+                                            <segue destination="m9n-Qi-VW2" kind="show" identifier="moeda" id="PPa-CO-DAO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38232576847076416" green="0.74199306964874268" blue="0.55039286613464355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FJM-bt-5Sb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SLR-no-VUf"/>
+                            <constraint firstItem="FJM-bt-5Sb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-48.5" id="gTG-zf-toB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cara ou Coroa" id="Jai-IK-jPu"/>
+                    <connections>
+                        <outlet property="btnJogar" destination="T4s-rh-JRL" id="6Fs-tk-UaX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="36.431784107946029"/>
+        </scene>
+        <!--Detalhes View Controller-->
+        <scene sceneID="fDC-fn-heR">
+            <objects>
+                <viewController id="m9n-Qi-VW2" customClass="DetalhesViewController" customModule="Cara_ou_Coroa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G4S-ZL-B7S"/>
+                        <viewControllerLayoutGuide type="bottom" id="mpN-wo-hIc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nPC-fS-wbK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x4Y-7o-aZ0">
+                                <rect key="frame" x="7.5" y="85" width="305" height="398"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ti2-0v-iAP">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="304"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="305" id="9ll-vi-QTf"/>
+                                            <constraint firstAttribute="height" constant="304" id="qTm-2c-hqm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXr-Xs-enp">
+                                        <rect key="frame" x="17" y="324" width="271" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="271" id="HRI-B8-8FK"/>
+                                            <constraint firstAttribute="height" constant="74" id="nGP-kf-k6V"/>
+                                        </constraints>
+                                        <state key="normal" image="botao_voltar"/>
+                                        <connections>
+                                            <segue destination="BE1-NM-A9N" kind="showDetail" id="XJc-Ma-9By"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3823257685" green="0.7419930696" blue="0.55039286610000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x4Y-7o-aZ0" firstAttribute="top" secondItem="G4S-ZL-B7S" secondAttribute="bottom" constant="21" id="KLv-l9-MSD"/>
+                            <constraint firstItem="x4Y-7o-aZ0" firstAttribute="centerX" secondItem="nPC-fS-wbK" secondAttribute="centerX" id="Vbr-wL-Mfy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VLS-dg-ruw"/>
+                    <connections>
+                        <outlet property="imgMoedas" destination="Ti2-0v-iAP" id="QdM-Mh-g7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4Y-1s-5o3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Md5-vH-S1p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BE1-NM-A9N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Csu-1F-AQ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FKg-DZ-YWI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abb-Pb-vRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botao_jogar" width="271" height="74"/>
+        <image name="botao_voltar" width="248" height="66"/>
+        <image name="logo" width="321" height="154"/>
+    </resources>
+</document>

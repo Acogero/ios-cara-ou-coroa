@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/abilio/Desktop/Marcos Vinicius/Cara ou Coroa/Cara ou Coroa/DetalhesViewController.swift",
+      "line": 14,
+      "symbol": "DetalhesViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/abilio/Desktop/Marcos Vinicius/Cara ou Coroa"
+}

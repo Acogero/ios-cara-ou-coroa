@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "aa5f5e1197d0e4c6d57906fb1ddf5112"
+build_time: [556825830, 462514000]
+inputs:
+  "/Users/abilio/Desktop/Marcos Vinicius/Cara ou Coroa/Cara ou Coroa/ViewController.swift": [9223372036854775807, 0]
+  "/Users/abilio/Desktop/Marcos Vinicius/Cara ou Coroa/Cara ou Coroa/AppDelegate.swift": [9223372036854775807, 0]
+  "/Users/abilio/Desktop/Marcos Vinicius/Cara ou Coroa/Cara ou Coroa/DetalhesViewController.swift": [9223372036854775807, 0]
